@@ -1,6 +1,6 @@
 # Surya Enterprises
 
-A mobile-first, single-page clothing storefront built with Vue 3, TypeScript, and Vite.
+A simple, mobile-first clothing landing page built with Vue 3, TypeScript, and Vite. It focuses on the brand, two offers, and one large WhatsApp contact button, with no navigation or extra sections.
 
 ## Development
 
@@ -8,7 +8,7 @@ Install dependencies with `bun install`, then run `bun run dev`. Run `bun run bu
 
 ## Content
 
-- The WhatsApp destination is `918294245725` in `src/components/ContactLink.vue`. General inquiries include the requested `[product/design ID]` placeholder; product inquiries include their specific design ID. All links open WhatsApp with a URL-encoded message.
-- Edit the sample product list and image references in `src/App.vue` to publish the actual catalog. The current images and design IDs are illustrative, not verified inventory. The page directs customers to ask for current prices, sizes, and availability.
-- Product and banner images are loaded from Unsplash; fonts are loaded from Google Fonts, with local system fallbacks. Replace images with owned brand photography for launch.
+- The brand logo, full banner image, and contact button all open WhatsApp at `918294245725` with the URL-encoded message `Hi sir,\nNeed Id.` The shared destination and message are in `src/whatsapp.ts`.
+- The phone number is used only in the WhatsApp link destination; it is not displayed on the page.
+- The banner image in `src/App.vue` is illustrative photography loaded from Unsplash. Replace it with owned brand photography for launch. Fonts use the local system stack.
 - The two offers are displayed separately, not as a combined discount.
